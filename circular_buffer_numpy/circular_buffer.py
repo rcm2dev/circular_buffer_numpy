@@ -239,7 +239,7 @@ class CircularBuffer(object):
         if j > i:
             res = self.buffer[i:j]
         else:
-            length = self.shape[1] - i + j
+            length = self.shape[0] - i + j
             res = self.get_N(N=length, M=j-1)
         return res
 
